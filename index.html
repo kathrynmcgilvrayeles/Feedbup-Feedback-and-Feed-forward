@@ -6,13 +6,12 @@
     <title>Learning Activity</title>
     <style>
         body {
-            /* Changed font-family to Montserrat, with sans-serif as a fallback */
             font-family: 'Montserrat', sans-serif;
             background-color: #f0f4f7;
             padding: 20px;
         }
         .learning-activity-box {
-            background-color: #e0f2f7; /* A light blue-green for the background */
+            background-color: #e0f2f7;
             border-radius: 15px;
             padding: 20px;
             display: flex;
@@ -22,15 +21,19 @@
         }
         .icon-container {
             flex-shrink: 0;
-            width: 50px; /* Adjust as needed */
-            height: 50px; /* Adjust as needed */
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #96ccd9; /* optional background colour */
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .icon-container img {
-            max-width: 100%;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* ensures it fills the circle */
         }
         .content {
             flex-grow: 1;
@@ -39,8 +42,6 @@
             margin: 0 0 10px 0;
             color: #333;
             font-size: 1.2em;
-            /* Changed font-family for heading */
-            font-family: 'Montserrat', sans-serif;
         }
         ul {
             margin: 0;
@@ -50,18 +51,14 @@
             margin-bottom: 10px;
             line-height: 1.5;
             color: #555;
-            /* Changed font-family for list items */
-            font-family: 'Montserrat', sans-serif;
         }
     </style>
-    <!-- Link to Google Fonts for Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="learning-activity-box">
         <div class="icon-container">
-            <!-- Corrected image file path -->
             <img src="Workbook%20icon%202.png" alt="Workbook icon 2">
         </div>
         <div class="content">
